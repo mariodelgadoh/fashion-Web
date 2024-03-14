@@ -1,0 +1,54 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Sirin Stencil", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    display: flex;
+}
+
+.overlay{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #fff;
+    opacity: 1;
+    z-index: 9;
+    animation: fade-out 2s forwards 1;
+    pointer-events: none;
+}
+
+@keyframes fade-out {
+    to {
+        opacity: 0;
+    }
+}
+
+.left-side {
+    width: 15vw;
+    height: 100%;
+    border-radius: 1px solid rgba(0, 0, 0, 0.1);
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 2vw;
+    position: absolute;
+    top: 4vw;
+    left: -1.5vw;
+    transform: rotate(-90deg);
+    user-select: none;
+}
